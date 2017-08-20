@@ -1,9 +1,12 @@
-<!DOCTYPE html
+<!DOCTYPE html>
 <html lang="es-MX">
   <head>
-    <meta charset="utf-8">    
+    <meta charset="utf-8">   
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content=""> 
+
     <title>Restaurante</title>
     
     {!!Html::style('css/bootstrap.min.css')!!}
@@ -42,5 +45,8 @@
             </div><!--/.nav-collapse -->
         </div><!--/.container-fluid -->
     </nav><!--cierre del menu navbar-->
+    <div class="containter">
+        @yield('content')
+    </div>
   </body>
 </html>

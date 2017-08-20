@@ -1,4 +1,4 @@
-@extends('menu.admin') 
+@extends('menu.admin')
 
 @section('content')
 
@@ -17,5 +17,14 @@
                 <th>Password</th>
             </tr>
         </tfoot>
+        <tbody>
+            @foreach($users as $user)
+                <tr>
+                    <td>{{$user->name}}</td>
+                    <td>{{$user->email}}</td>
+                    <td>{{$user->password}}</td>
+                </tr>
+            $endforeach
+        </tbody>
     </table>
 @stop
