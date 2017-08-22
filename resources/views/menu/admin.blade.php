@@ -22,7 +22,7 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-inverse">
         <!--clase que hace que el menu se coloque arriba y este siempre arriba-->
         <div class="container-fluid">
             <!--contenido del navbar-->
@@ -36,16 +36,19 @@
                 </button>
             </div>
             <!--clase para desplegar los botones del menu y el menu en si-->
-            <div id="navbar" class="navbar-collapse collapse">
+            <div id="navbar" class="navbar-collapse collapse navbar-right">
                 <!--primera seccion del menu-->
-                <ul class='nav navbar-nav navbar-right'>
+                <ul class='nav navbar-nav'>
                     <!--botones que se desplegarán del dropdown-->
-                    <li><a><span class='glyphicon glyphicon-user'> Usuarios</span> </a></li>
+                    <li><a href="/usuario"> <span class='glyphicon glyphicon-user'></span> Usuarios </a></li>
+                    <li><a href="/mesa"> <span class='glyphicon glyphicon-blackboard'></span> Mesas </a></li>
+                    <li><a href="/platillo"> <span class='glyphicon glyphicon-glass'></span> Platillos </a></li>
+                    <li><a href="/orden"> <span class='glyphicon glyphicon-cutlery'></span> Ordenes </a></li>
                 </ul><!--cierre contenido cuenta-->
             </div><!--/.nav-collapse -->
         </div><!--/.container-fluid -->
     </nav><!--cierre del menu navbar-->
-    <div class="containter">
+    <div class="container">
         @yield('content')
     </div>
   </body>

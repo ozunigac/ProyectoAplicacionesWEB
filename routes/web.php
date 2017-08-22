@@ -11,3 +11,7 @@
 |
 */
 Route::resource('/usuario',"UsuarioController");
+Route::resource('/mesa',"MesaController");
+Route::resource('/platillo',"PlatilloController");
+Route::resource('/orden',"OrdenController");
+
